@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const data = require('./data/management.json');
+const data = require('./data/tour.json');
 const fs = require('fs');
 
 // middleware
@@ -14,9 +14,9 @@ app.get('/', (req, res, next) => {
 });
 
 // routes
-const managementRouter = require('./routes/management.route')
+const tourRouter = require('./routes/tour.route')
 
-app.use('/api/v1/tours', managementRouter);
-app.use('/api/v1', managementRouter);
+app.use('/api/v1/tours', tourRouter);
+app.use('/api/v1', tourRouter);
 
 module.exports = app;

@@ -8,7 +8,7 @@ mongoose.connect(process.env.LOCAL_DATABASE).then(() => {
     console.log(`Database connected successfully`.red.bold);
   });
 
-const app = require('./api');
+const app = require('./app');
 
 // port connection
 const port = process.env.PORT || 4040;
