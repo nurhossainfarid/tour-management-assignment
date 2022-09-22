@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const data = require('./data/tour.json');
-const fs = require('fs');
+// const data = require('./data/tour.json');
+// const fs = require('fs');
 
 // middleware
 app.use(express.json());

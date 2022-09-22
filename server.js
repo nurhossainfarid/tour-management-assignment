@@ -4,7 +4,7 @@ const cors = require('cors');
 const colors = require('colors');
 
 // database connection
-mongoose.connect(process.env.LOCAL_DATABASE).then(() => {
+mongoose.connect(process.env.DATABASE).then(() => {
     console.log(`Database connected successfully`.red.bold);
   });
 
