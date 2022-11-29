@@ -5,7 +5,7 @@ const cors = require('cors');
 // const fs = require('fs');
 
 // middleware
-app.use(cors({ origin: "https://whispering-gorge-00111.herokuapp.com/"}));
+app.use(cors());
 app.use(express.json());
 
 // initial server start
